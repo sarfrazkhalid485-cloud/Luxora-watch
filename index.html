@@ -58,3 +58,224 @@ nav a{
   background:
     radial-gradient(circle at center,#292929 0%,#080808 55%);
 }
+
+.hero h1{
+  font-size:55px;
+  letter-spacing:6px;
+  margin-bottom:18px;
+}
+
+.hero p{
+  color:#bbb;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.button{
+  display:inline-block;
+  background:white;
+  color:black;
+  padding:14px 28px;
+  border-radius:4px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.section{
+  padding:70px 6%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:35px;
+  margin-bottom:40px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#141414;
+  border:1px solid #292929;
+  border-radius:10px;
+  padding:18px;
+  text-align:center;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.watch-box{
+  height:260px;
+  border-radius:8px;
+  background:linear-gradient(145deg,#333,#111);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:90px;
+  margin-bottom:20px;
+}
+
+.card h3{
+  font-size:21px;
+  margin-bottom:10px;
+}
+
+.price{
+  color:#ccc;
+  font-size:18px;
+  margin-bottom:18px;
+}
+
+.contact{
+  text-align:center;
+  background:#111;
+}
+
+.contact p{
+  color:#bbb;
+  margin-bottom:25px;
+}
+
+.social{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.social a{
+  text-decoration:none;
+  padding:13px 22px;
+  border-radius:5px;
+  background:white;
+  color:black;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:#777;
+}
+
+@media(max-width:600px){
+  .hero h1{
+    font-size:38px;
+    letter-spacing:3px;
+  }
+
+  header{
+    padding:15px 4%;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+
+  nav a{
+    margin-left:8px;
+    font-size:12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">LUXORA</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#watches">Watches</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h1>LUXORA WATCH</h1>
+    <p>Timeless design. Modern luxury.</p>
+
+    <a class="button" href="#watches">
+      Explore Watches
+    </a>
+  </div>
+</section>
+
+<section class="section" id="watches">
+
+  <h2 class="section-title">
+    Our Watches
+  </h2>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="watch-box">⌚</div>
+
+      <h3>Luxora Classic</h3>
+
+      <div class="price">$199</div>
+
+      <a class="button" href="#contact">
+        Buy Now
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="watch-box">⌚</div>
+
+      <h3>Luxora Premium</h3>
+
+      <div class="price">$299</div>
+
+      <a class="button" href="#contact">
+        Buy Now
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="watch-box">⌚</div>
+
+      <h3>Luxora Elite</h3>
+
+      <div class="price">$399</div>
+
+      <a class="button" href="#contact">
+        Buy Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+
+  <h2 class="section-title">
+    Contact Us
+  </h2>
+
+  <p>
+    For orders and details, contact us.
+  </p>
+
+  <div class="social">
+    <a href="#">WhatsApp</a>
+    <a href="#">Instagram</a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Luxora Watch. All rights reserved.
+</footer>
+
+</body>
+</html>
